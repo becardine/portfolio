@@ -47,7 +47,7 @@ export default {
 
   webfontloader: {
     google: {
-      families: ["Quicksand:wght@300;400;500&display=swap"],
+      families: ["Quicksand:wght@300;400;500;600;700&display=swap"],
     },
   },
 

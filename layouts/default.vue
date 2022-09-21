@@ -22,9 +22,8 @@ export default {
   },
 };
 </script>
-<style>
-  #app {
-    background: url('/background/bg.jpg') no-repeat center;
-    background-size: cover;
-  }
+<style lang="sass" >
+  #app
+    background: url('/background/bg-blur.svg') no-repeat center
+    background-size: cover
 </style>

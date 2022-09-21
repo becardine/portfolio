@@ -2,3 +2,43 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.righteous {
+  font-family: 'Righteous', cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 40px;
+  color: #000;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 40px;
+  color: #000;
+  opacity: 0.5;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 30px;
+  color: #000;
+}
+h4 {
+  font-size: 1rem;
+  line-height: 20px;
+  color: #000;
+  opacity: 0.5;
+}
+.body1 {
+  font-size: 1rem;
+  line-height: 20px;
+  color: #000;
+}
+.subtitle1 {
+  font-size: 1rem;
+  line-height: 20px;
+  color: #000;
+
+}
