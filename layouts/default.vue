@@ -1,11 +1,14 @@
 <template>
-  <v-app dark>
+  <v-app dark class="app">
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app> Menu </v-footer>
+    <!-- :absolute="!fixed" -->
+    <v-footer color="transparent" dark class="mb-5">
+      <Menu />
+    </v-footer>
   </v-app>
 </template>
 
@@ -14,8 +17,14 @@ export default {
   name: "DefaultLayout",
   data() {
     return {
-      fixed: false,
+      /* fixed: false, */
     };
   },
 };
 </script>
+<style>
+  #app {
+    background: url('/background/bg.jpg') no-repeat center;
+    background-size: cover;
+  }
+</style>
