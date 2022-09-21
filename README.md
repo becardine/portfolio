@@ -6,4 +6,4 @@ design(help kk) and code made by me
 
 ## mockups
 
-![mobile](static\mockups\mobile.png)
+![mobile](/mockups/mobile.png)
