@@ -6,4 +6,4 @@ design(help kk) and code made by me
 
 ## mockups
 
-![mobile](/mockups/mobile.png)
+<img src="/static/mockups/mobile.png">
