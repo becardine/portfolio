@@ -1,5 +1,8 @@
 <template>
   <v-app dark class="app">
+    <v-app-bar color="transparent" elevation="0" align="end">
+      <DarkMode />
+    </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
@@ -23,7 +26,7 @@ export default {
 };
 </script>
 <style lang="sass" >
-  #app
-    background: url('/background/bg-blur.svg') no-repeat center
-    background-size: cover
+#app
+  background: url('/background/bg-blur.svg') no-repeat center
+  background-size: cover
 </style>

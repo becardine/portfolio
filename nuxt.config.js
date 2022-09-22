@@ -14,8 +14,9 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { href: 'https://fonts.googleapis.com/css?family=Material+Icons', rel: 'stylesheet'},
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -70,8 +71,8 @@ export default {
     theme: {
       dark: true,
       themes: {
-        light: {
-          primary: colors.blue.darken2,
+        dark: {
+          primary: colors.grey.darken4,
           bg: "#ffffff",
           surface: "#ffffff",
           accent: colors.grey.darken3,
@@ -81,8 +82,8 @@ export default {
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
         },
-        dark: {
-          primary: colors.grey.darken4,
+        light: {
+          primary: colors.grey.lighten1,
           bg: "#202020",
           surface: "#130a24",
           accent: colors.grey.darken3,
