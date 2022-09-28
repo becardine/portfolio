@@ -10,8 +10,7 @@
     </v-btn>
     <v-btn icon v-if="!$vuetify.theme.dark" @click="toggleTheme()">
       <v-icon
-        transition="scale-transition"
-        origin="center center"
+        transition="scroll-x-transition"
         color="yellow darken-3"
         class="mr-5 pa-0"
         >light_mode</v-icon

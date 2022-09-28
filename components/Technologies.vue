@@ -336,9 +336,10 @@ export default {};
 <style>
 .fade {
   transition: all .5s;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .fade:hover {
   opacity: 1;
+  scale: 1.2;
 }
 </style>

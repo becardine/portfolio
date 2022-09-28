@@ -1,16 +1,16 @@
 <template>
   <v-row>
-    <v-col lg="6" md="4" offset-md="4" offset-lg="3">
+    <v-col :cols="$vuetify.breakpoint.mdAndUp ? '4' : '10'" :offset="$vuetify.breakpoint.mdAndUp ? '4' : '1'">
       <v-card
         :value="value"
         color="primary"
         class="rounded-pill d-flex justify-center align-center"
-        :min-height="$vuetify.breakpoint.md ? '8.2vh' : '7vh'"
+        :min-height="$vuetify.breakpoint.md ? '84px' : '84px'"
       >
         <v-btn
           value=1
           class="mx-2 align-center"
-          :class="value == 1 ? 'is-active' : ''"
+          :class="this.$route.name === 'project-1' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
@@ -23,7 +23,7 @@
         <v-btn
           value=2
           class="mx-2"
-          :class="value == 2 ? 'is-active' : ''"
+          :class="this.$route.name === 'project-2' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
@@ -36,7 +36,7 @@
         <v-btn
           value=0
           class="mx-2 align-center"
-          :class="value == 0 ? 'is-active' : ''"
+          :class="this.$route.name === 'about' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
@@ -53,7 +53,7 @@
         <v-btn
           value=3
           class="mx-2"
-          :class="value == 3 ? 'is-active' : ''"
+          :class="this.$route.name === 'project-3' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
@@ -66,7 +66,7 @@
         <v-btn
           value=4
           class="mx-2"
-          :class="value == 4 ? 'is-active' : ''"
+          :class="this.$route.name === 'project-4' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
