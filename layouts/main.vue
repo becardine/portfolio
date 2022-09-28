@@ -1,7 +1,7 @@
 <template>
   <v-app dark class="app">
-    <v-app-bar color="transparent" elevation="0" align="end">
-      <DarkMode />
+    <v-app-bar color="transparent" elevation="0" class="pt-8">
+      <Logo />
     </v-app-bar>
     <v-main>
       <v-container>
@@ -29,4 +29,7 @@ export default {
 #app
   background: url('/background/bg-blur.svg') no-repeat center
   background-size: cover
+
+.v-toolbar__content
+  justify-content: center,
 </style>

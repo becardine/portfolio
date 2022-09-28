@@ -1,48 +1,53 @@
 <template>
   <v-row>
-    <v-col :cols="$vuetify.breakpoint.mdAndUp ? '4' : '10'" :offset="$vuetify.breakpoint.mdAndUp ? '4' : '1'">
+    <v-col align="center">
       <v-card
         :value="value"
-        color="primary"
+        color="bg"
         class="rounded-pill d-flex justify-center align-center"
         :min-height="$vuetify.breakpoint.md ? '84px' : '84px'"
+        max-width="342px"
       >
         <v-btn
           value=1
           class="mx-2 align-center"
-          :class="this.$route.name === 'project-1' ? 'is-active' : ''"
+          :class="this.$route.name === 'projects-1' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
+          color="blue-grey lighten-5"
           height="47px"
           width="47px"
-          @click="showProject(1)"
+          @click="$router.push('/projects/1')"
         >
-          <v-img src="/icones/logo-projeto-1.svg" max-width="30px"></v-img>
+          <v-img src="/icones/code.svg" max-width="30px"></v-img>
         </v-btn>
         <v-btn
           value=2
           class="mx-2"
-          :class="this.$route.name === 'project-2' ? 'is-active' : ''"
+          :class="this.$route.name === 'projects-2' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
+          color="blue-grey lighten-5"
           height="47px"
           width="47px"
-          @click="showProject(2)"
+          @click="$router.push('/projects/2')"
         >
-          <v-img src="/icones/logo-projeto-2.svg" max-width="30px"></v-img>
+          <v-img src="/icones/code.svg" max-width="30px"></v-img>
         </v-btn>
         <v-btn
           value=0
           class="mx-2 align-center"
           :class="this.$route.name === 'about' ? 'is-active' : ''"
           elevation="2"
+          transition="fade"
           fab
           dark
+          color="grey lighten-4"
           height="47px"
           width="47px"
-          @click="showProject(0)"
+          @click="$router.push('/about')"
         >
           <v-img
             src="/icones/logo-menu.svg"
@@ -53,29 +58,30 @@
         <v-btn
           value=3
           class="mx-2"
-          :class="this.$route.name === 'project-3' ? 'is-active' : ''"
+          :class="this.$route.name === 'projects-3' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
+          color="blue-grey lighten-5"
           height="47px"
           width="47px"
-          @click="showProject(3)"
+          @click="$router.push('/projects/3')"
         >
-          <v-img src="/icones/logo-projeto-3.svg" max-width="30px"></v-img>
+          <v-img src="/icones/code.svg" max-width="30px"></v-img>
         </v-btn>
         <v-btn
           value=4
           class="mx-2"
-          :class="this.$route.name === 'project-4' ? 'is-active' : ''"
+          :class="this.$route.name === 'projects-4' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
-          color="purple"
+          color="blue-grey lighten-5"
           height="47px"
           width="47px"
-          @click="showProject(4)"
+          @click="$router.push('/projects/4')"
         >
-          <v-img src="/icones/logo-projeto-4.svg" max-width="30px"></v-img>
+          <v-img src="/icones/code.svg" max-width="30px"></v-img>
         </v-btn>
       </v-card>
     </v-col>
@@ -89,14 +95,6 @@ export default {
       value: null,
     };
   },
-  methods: {
-    showProject(value) {
-      this.value = value;
-      if (value == 0) {
-        this.$router.push('about');
-      }
-    }
-  },
 };
 </script>
 
@@ -104,6 +102,7 @@ export default {
 .is-active {
   -webkit-animation: is-active 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: is-active 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  scale: 1.3;
 }
 @-webkit-keyframes is-active {
   0% {

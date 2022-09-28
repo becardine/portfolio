@@ -3,14 +3,14 @@
     <v-card-text>
       <v-row justify="end">
       <v-btn icon dark @click="$router.push('/')">
-        <v-icon color="primary">mdi-close</v-icon>
+        <v-icon color="bg">mdi-close</v-icon>
       </v-btn>
       </v-row>
       <h4 class="text--lighten-2">Olá, eu sou a</h4>
       <h1 class="righteous">becardine</h1>
       <h2>Frontend developer</h2>
       <v-btn
-        color="black"
+        color="bg"
         small
         fab
         class="ma-2 mb-4 text-decoration-none"
@@ -21,7 +21,7 @@
       </v-btn>
       <v-btn
         type="button"
-        color="black"
+        color="bg"
         small
         fab
         class="ma-2 mb-4 text-decoration-none"
@@ -55,6 +55,7 @@
 <script>
 export default {
   name: 'About',
+  layout: 'main',
 };
 </script>
 
