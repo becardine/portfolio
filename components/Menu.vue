@@ -11,16 +11,16 @@
         <v-btn
           value=1
           class="mx-2 align-center"
-          :class="this.$route.name === 'projects-1' ? 'is-active' : ''"
+          :class="this.$route.name === 'projects-landing-page-appnews' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
           color="blue-grey lighten-5"
           height="47px"
           width="47px"
-          @click="$router.push('/projects/1')"
+          @click="$router.push('/projects/landing-page-appnews')"
         >
-          <v-img src="/icones/code.svg" max-width="30px"></v-img>
+          <v-img src="/icones/logo-projeto-appnews.svg" max-width="30px"></v-img>
         </v-btn>
         <v-btn
           value=2
@@ -52,7 +52,6 @@
           <v-img
             src="/icones/logo-menu.svg"
             max-width="30px"
-            class="ml-1"
           ></v-img>
         </v-btn>
         <v-btn
