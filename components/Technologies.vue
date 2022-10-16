@@ -1,66 +1,7 @@
 <template>
   <v-item-group mandatory class="d-flex align-center justify-center flex-wrap">
     <v-item class="fade">
-      <svg
-        width="84"
-        height="91"
-        viewBox="0 0 84 91"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g filter="url(#filter0_d_46_226)">
-          <path
-            d="M74.1146 58.3032V26.6968C74.1132 25.3111 73.7474 23.9502 73.0539 22.7505C72.3605 21.5509 71.3638 20.5547 70.1638 19.8619L42.5081 4.05862C41.3069 3.3651 39.9443 3 38.5573 3C37.1703 3 35.8077 3.3651 34.6065 4.05862L6.95081 19.8619C5.7508 20.5547 4.75408 21.5509 4.06064 22.7505C3.3672 23.9502 3.00142 25.3111 3 26.6968V58.3032C3.00142 59.6889 3.3672 61.0498 4.06064 62.2495C4.75408 63.4491 5.7508 64.4453 6.95081 65.1381L34.6065 80.9414C35.8077 81.6349 37.1703 82 38.5573 82C39.9443 82 41.3069 81.6349 42.5081 80.9414L70.1638 65.1381C71.3638 64.4453 72.3605 63.4491 73.0539 62.2495C73.7474 61.0498 74.1132 59.6889 74.1146 58.3032Z"
-            fill="#171717"
-            stroke="#171717"
-            stroke-opacity="0.3"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M51.7656 27.5977H44.3438L38.875 36.1914L34.1875 27.5977H17L38.875 65L60.75 27.5977H51.7656ZM22.3711 30.7227H27.6445L38.875 50.0586L50.0078 30.7227H55.2812L38.875 58.8477L22.3711 30.7227Z"
-            fill="#71B96A"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_d_46_226"
-            x="0"
-            y="0"
-            width="83.1146"
-            height="91"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dx="3" dy="3" />
-            <feGaussianBlur stdDeviation="2.5" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_46_226"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_46_226"
-              result="shape"
-            />
-          </filter>
-        </defs>
-      </svg>
+      <img src="/technologies/vuejs.svg" />
     </v-item>
     <v-item class="fade">
       <svg
@@ -185,6 +126,9 @@
           </filter>
         </defs>
       </svg>
+    </v-item>
+    <v-item class="fade">
+      <img src="/technologies/vuetify.svg" />
     </v-item>
     <v-item class="fade">
       <svg

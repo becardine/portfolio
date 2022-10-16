@@ -36,7 +36,13 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/gtm',
   ],
+
+  gtm: {
+    id: 'GTM-PHGZ78Z',
+  },
+
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

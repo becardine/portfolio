@@ -25,16 +25,16 @@
         <v-btn
           value=2
           class="mx-2"
-          :class="this.$route.name === 'projects-2' ? 'is-active' : ''"
+          :class="this.$route.name === 'projects-cardi-alves-associados' ? 'is-active' : ''"
           elevation="2"
           fab
           dark
           color="blue-grey lighten-5"
           height="47px"
           width="47px"
-          @click="$router.push('/projects/2')"
+          @click="$router.push('/projects/cardi-alves-associados')"
         >
-          <v-img src="/icones/code.svg" max-width="30px"></v-img>
+          <v-img src="/icones/logo-ceaa.svg" max-width="25px"></v-img>
         </v-btn>
         <v-btn
           value=0
